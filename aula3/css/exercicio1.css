@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    padding: 0 2%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+table{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table, th, td{
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+}
+
+table tr:first-child th{
+    padding: 8px 60px;
+}
+
+.period{
+    border-top: 2px solid gray;
+    background-color: rgb(168, 168, 168);
+}
+
+.android{
+    border-top: 2px solid rgb(99, 255, 99);
+    background-color:rgb(189, 255, 189);
+}
+
+.ios{
+    border-top: 2px solid rgb(19, 113, 255);
+    background-color:rgb(98, 161, 255);
+}
+
+.windows{
+    border-top: 2px solid rgb(124, 23, 255);
+    background-color:rgb(176, 116, 255);
+}
+
+.others{
+    border-top: 2px solid rgb(255, 154, 23);
+    background-color:rgb(255, 190, 116);
+}
