@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/exercicio2.css">
+</head>
+<body>
+
+
+	<table id="tableHtml">
+		
+	</table>
+
+	<!-- <script src="js/exercicio2.js"></script> -->
+
+	<script>
+		let linha = parseInt(prompt("Quantidade de linhas"));
+		let coluna = parseInt(prompt("Quantidade de coluna"));
+		let contadorLinha = 1;
+		let tableHtml = document.getElementById('tableHtml');
+
+		while(linha >= contadorLinha){
+			let contadorColuna = 1;
+
+			tableHtml.innerHTML += `<tr id="piranha${contadorLinha}"></tr>`;
+			while(coluna >= contadorColuna){
+
+				document.querySelector(`#piranha${contadorLinha}`).innerHTML += `<td id="pirarucu${contadorColuna}">${contadorColuna}</td>`;
+
+				contadorColuna++;
+
+			}
+
+			contadorLinha++;
+		}
+
+		
+
+	</script>
+</body>
+</html>

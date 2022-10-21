@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" placeholder="nome" id="nome">
+	<input type="text" placeholder="nota" id="nota">
+
+	<button id="btnCadastrar">Cadastrar</button>
+	<button id="btnExibir">Exibir</button>
+
+	<script>
+		let btnCadastrar = document.getElementById('btnCadastrar');
+		let btnExibir = document.getElementById('btnExibir');
+
+		let nome = document.getElementById('nome');
+		let nota = document.getElementById('nota');
+
+		let nomeList = [];
+		let notaList = [];
+
+		btnCadastrar.addEventListener("click", cadastrar);
+		btnExibir.addEventListener("click", exibir);
+
+		function cadastrar(){
+			nomeList.push(nome.value);
+			while(true){
+				if(parseFloat(nota.value) > 2 || parseFloat(nota.value) < 0){
+					alert("erro");
+					break;
+				}else{
+					notaList.push(nota.value);
+					break;
+				}
+			}
+		}
+
+		function exibir(){
+			console.log(nomeList);
+			console.log(notaList);
+		}
+
+		function clean(){
+			nome.value = "";
+			nota.value = "";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+header{
+	background: rgb(253, 158, 124);
+}
+
+main{
+	width: 100%;
+	height: 90%;
+	background: rgb(253, 158, 124);
+}
+
+.container-img{
+	display: none;
+}
